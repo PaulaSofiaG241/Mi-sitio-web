@@ -1,21 +1,22 @@
 /* elementos de clase */
 h1 {
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bolder;
-    color: rgb(43, 226, 156);
+    color: black;
         text-align: center;
 }
 p {
     color: blueviolet;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 20px;
 }
 body {
-    background-color:azure;
+    background-color: beige;
 }
 h3 {
     font-weight: bolder;
-    color: red;
+    color: grey;
+    text-align: center;
 }
 /* clases atadas a un elemento */
 p.font-verdana
@@ -31,7 +32,7 @@ p.font-cinzel
 p.font-bebasneue
 {
     font-family: 'Bebas Neue';
-    color: blanchedalmond;
+    color: brown;
 }
 /* cinzel-700 - latin */
 @font-face {
