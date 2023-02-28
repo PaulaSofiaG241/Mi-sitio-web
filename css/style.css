@@ -13,7 +13,7 @@ p {
 body {
     background-color:azure;
 }
-h2 {
+h3 {
     font-weight: bolder;
     color: red;
 }
@@ -21,14 +21,17 @@ h2 {
 p.font-verdana
 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
 }
 p.font-cinzel
 {
     font-family: 'Cinzel', sans-serif;
+    color: darkmagenta;
 }
 p.font-bebasneue
 {
     font-family: 'Bebas Neue';
+    color: blanchedalmond;
 }
 /* cinzel-700 - latin */
 @font-face {
