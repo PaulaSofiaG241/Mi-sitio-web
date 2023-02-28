@@ -15,8 +15,9 @@ body {
 }
 h3 {
     font-weight: bolder;
-    color: grey;
+    color: dimgray;
     text-align: center;
+    font-size: 25px;
 }
 /* clases atadas a un elemento */
 p.font-verdana
