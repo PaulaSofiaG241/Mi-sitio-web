@@ -17,10 +17,10 @@ boxPlus.addEventListener("click", function(){
     };
     if(boxUnidades.innerHTML == 1){
         document.getElementById("cantProductos").innerHTML =
-        boxUnidades.innerHTML + "Producto";
+        boxUnidades.innerHTML + " Producto";
     }
     else{
-        document.getElementById("cantProductos").innerHTML = boxUnidades.innerHTML +"Productos";
+        document.getElementById("cantProductos").innerHTML = boxUnidades.innerHTML +" Productos";
     }
 });
 
@@ -33,10 +33,10 @@ boxMinus.addEventListener("click", function(){
     };
     if(boxUnidades.innerHTML == 1){
         document.getElementById("cantProductos").innerHTML =
-        boxUnidades.innerHTML + "Producto";
+        boxUnidades.innerHTML + " Producto";
     }
     else{
-        document.getElementById("cantProductos").innerHTML = boxUnidades.innerHTML +"Productos";
+        document.getElementById("cantProductos").innerHTML = boxUnidades.innerHTML +" Productos";
     }
 });
 
