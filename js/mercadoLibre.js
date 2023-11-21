@@ -11,22 +11,42 @@ class Automovil{
 }
 let auto1 = new Automovil("Toyota", " Prado 2.7 Tx-l Sumo" , "$160000000", "84.000 km ·", "2014 ·",  "Suba - Bogota D.C.", "imagenes/carro2.jpg"  );
 let auto2 = new Automovil("Mazda", " CX-5 Grand Touring" , "$118000000", "26.000 km ·", "2022 ·",  "Pitalito - Huila", "imagenes/carro3.jpg"  );
-let auto3 = new Automovil("Mazda", " CX-5 Grand Touring" , "$118000000", "26.000 km ·", "2022 ·",  "Pitalito - Huila", "imagenes/carro3.jpg"  );
-let boxProductos = document.getElementById("boxProductos");
+let auto3 = new Automovil("Mazda", " 3 2.0 Touring" , "$186000000", "99.000 km ·", "2021 ·",  "Pitalito - Huila", "imagenes/Mazda.webp"  );
+let auto4 = new Automovil("Chevrolet ", " Captiva 2.4 SPORT" , "$99000000", "65.000 km ·", "2015 ·",  "Pitalito - Huila", "imagenes/che12.jpg"  );
+let auto5 = new Automovil("Chevrolet ", "Captiva 2.4 SPORT" , "$145000000", "34.000 km ·", "2020 ·",  "Pitalito - Huila", "imagenes/carro3.jpg"  );
+let auto6 = new Automovil("Toyota", "   Prado 2.7 Sumo Ego" , "$210000000", "74.000 km ·", "2021 ·",  "Pitalito - Huila", "imagenes/to.jpg"  );
 
-let inputBusqueda = document.getElementById("input-busqueda");
+let boxProductos = document.getElementById("boxProductos");
+cargarAuto(auto1);
+cargarAuto(auto2);
+cargarAuto(auto3);
+cargarAuto(auto4);
+cargarAuto(auto5);
+cargarAuto(auto6);
 
 window.addEventListener("keydown", (event) =>{
+    let inputBusqueda = document.getElementById("input-busqueda").value;
     if(event.key == "Enter"){
-        if(inputBusqueda == "Mazda"){
-        cargarAuto(auto1)
-        cargarAuto(auto2)}
+        boxProductos.innerHTML = "";
+        let inputBusquedaAux = inputBusqueda.toLowerCase();
+        if(inputBusquedaAux == "mazda"){
+        cargarAuto(auto2);
+        cargarAuto(auto3);
+        }
+        else if(inputBusquedaAux == "toyota"){
+            cargarAuto(auto1);
+        cargarAuto(auto6);
+        }
+        else if(inputBusquedaAux == "chevrolet"){
+            cargarAuto(auto4);
+        cargarAuto(auto5);
+        }
 
     }
 });
 
-cargarAuto(auto1);
-cargarAuto(auto2);
+
+
 
 function cargarAuto(auto){
 /* Contenedor para los productos individuales */
@@ -42,8 +62,8 @@ boxProducto.appendChild(boxImagen);
 boxImagen.setAttribute("class","box-imagen");
 let imagenProducto = document.createElement("img");
 boxImagen.appendChild(imagenProducto);
-imagenProducto.setAttribute("src",  ;
-imagenProducto.setAttribute("class","imagen-producto")
+imagenProducto.setAttribute("src",auto.imagen)  
+imagenProducto.setAttribute("class","imagen-producto");
 
 
 
